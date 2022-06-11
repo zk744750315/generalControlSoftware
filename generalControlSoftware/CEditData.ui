@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CEditData</class>
+ <widget class="QWidget" name="CEditData">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>883</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数据</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+font: 12pt &quot;SimSun&quot;;
+}
+QPushButton{
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	
+	font: 11pt &quot;SimSun&quot;;
+	border: 1px solid rgb(150,150,150);
+	
+}
+
+QPushButton:hover {
+	background-color: rgb(200, 200, 200);
+}
+
+ QPushButton:pressed
+{
+	background-color: rgb(255, 255, 255);
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <family>SimSun</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>行</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinRow">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <family>SimSun</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>列</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinCol">
+       <property name="readOnly">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>25</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>长度</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>18</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioAddOne">
+       <property name="text">
+        <string>增一码</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioSubOne">
+       <property name="text">
+        <string>减一码</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioBConstant">
+       <property name="text">
+        <string>常数</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinConstant">
+       <property name="maximum">
+        <number>255</number>
+       </property>
+       <property name="displayIntegerBase">
+        <number>16</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radioReadFile">
+       <property name="text">
+        <string>读取文件</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>45</number>
+     </attribute>
+     <row>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>3</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>4</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>5</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>6</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>7</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>9</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>10</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>11</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>12</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>13</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>14</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>15</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>16</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

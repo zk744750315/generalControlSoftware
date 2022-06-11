@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CElectricCfg</class>
+ <widget class="QWidget" name="CElectricCfg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>567</width>
+    <height>561</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>电量模块配置</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="CgeneralControlSoftware.qrc">
+    <normaloff>:/新前缀/img/logo.png</normaloff>:/新前缀/img/logo.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+font: 12pt &quot;SimSun&quot;;
+}
+QPushButton{
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	
+	font: 11pt &quot;SimSun&quot;;
+	border: 1px solid rgb(150,150,150);
+	
+}
+
+QPushButton:hover {
+	background-color: rgb(200, 200, 200);
+}
+
+ QPushButton:pressed
+{
+	background-color: rgb(255, 255, 255);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>41</y>
+     <width>501</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,3,1,2">
+    <item>
+     <widget class="QLabel" name="labelCfgChannel">
+      <property name="text">
+       <string>配置通道：</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="combCfgChannel">
+      <property name="minimumSize">
+       <size>
+        <width>230</width>
+        <height>28</height>
+       </size>
+      </property>
+      <item>
+       <property name="text">
+        <string>第1路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第2路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第3路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第4路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第5路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第6路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第7路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第9路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第10路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第11路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第12路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第13路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第14路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第15路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第16路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第17路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第18路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第19路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第20路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第21路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第22路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第23路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第24路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第25路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第26路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第27路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第28路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第29路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第30路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第31路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第32路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第33路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第34路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第35路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第36路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第37路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第38路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第39路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第40路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第41路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第42路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第43路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第44路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第45路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第46路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第47路非电量信号通道</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>第48路非电量信号通道</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnCfgApplyToAll">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>应用到所有</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>520</y>
+     <width>441</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="3,0,3,0,3,0,3">
+    <item>
+     <widget class="QPushButton" name="btnOpen">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>打开</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>13</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnSaveAs">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>另存为</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>13</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnSave">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>13</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnCancel">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>28</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>取消</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widgetChannelData" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>511</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_13">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>7</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="labelCfgChannel_2">
+           <property name="text">
+            <string>波形输出类型：</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QComboBox" name="combCVaveform">
+           <property name="minimumSize">
+            <size>
+             <width>230</width>
+             <height>28</height>
+            </size>
+           </property>
+           <item>
+            <property name="text">
+             <string>直流输出</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>阶梯波输出</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>交流输出</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>脉冲输出</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8K正弦波</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="LayoutDCOutput">
+      <property name="spacing">
+       <number>7</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget1DCOutput" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QLabel" name="labelCfgChannel_3">
+           <property name="text">
+            <string>直流信号输出幅值：</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget2DCOutput" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QDoubleSpinBox" name="spinDCAmplitude">
+           <property name="maximum">
+            <double>35.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="LayoutLadderOutput">
+      <item>
+       <widget class="QWidget" name="widget1LadderOutput" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>阶梯波形刷新周期：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>阶梯波形输出高幅值(H)：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>阶梯波形输出低幅值(L)：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>阶梯波形输出初始序列值：</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget2LadderOutput" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QSpinBox" name="spinLadderFreshPer">
+           <property name="suffix">
+            <string>ms</string>
+           </property>
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDoubleSpinBox" name="spinLadderOutH">
+           <property name="minimum">
+            <double>-15.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>75.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDoubleSpinBox" name="spinLadderOutL">
+           <property name="minimum">
+            <double>-15.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>75.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinLadderOutStartValue">
+           <property name="minimum">
+            <number>1</number>
+           </property>
+           <property name="maximum">
+            <number>64</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QWidget" name="widget1ACOutput" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>交流信号输出有效值：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>交流信号输出频率：</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget2ACOutput" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QDoubleSpinBox" name="spinACValidValue">
+           <property name="suffix">
+            <string>V</string>
+           </property>
+           <property name="maximum">
+            <double>25.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDoubleSpinBox" name="spinACFrequency">
+           <property name="suffix">
+            <string>kHz</string>
+           </property>
+           <property name="minimum">
+            <double>0.010000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>0.010000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QWidget" name="widget1PauseOutput" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>脉冲信号输出幅值：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>脉冲信号输出频率：</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>脉冲宽度：</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget2PauseOutput" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_10">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QDoubleSpinBox" name="spinPauseOutAmplitude">
+           <property name="suffix">
+            <string>V</string>
+           </property>
+           <property name="minimum">
+            <double>-15.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>75.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDoubleSpinBox" name="spinPauseOutFrequency">
+           <property name="suffix">
+            <string>kHz</string>
+           </property>
+           <property name="minimum">
+            <double>1.000000000000000</double>
+           </property>
+           <property name="maximum">
+            <double>2.800000000000000</double>
+           </property>
+           <property name="singleStep">
+            <double>1.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSpinBox" name="spinPauseOutWidth">
+           <property name="maximum">
+            <number>1000</number>
+           </property>
+           <property name="singleStep">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="LayoutDCOutput_2">
+      <property name="spacing">
+       <number>7</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget18kOutput" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="QLabel" name="labelCfgChannel_6">
+           <property name="text">
+            <string>8K正弦输出有效值：</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget28kOutput" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_12">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QDoubleSpinBox" name="spin8kValidValue">
+           <property name="maximum">
+            <double>25.000000000000000</double>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>35</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="CgeneralControlSoftware.qrc"/>
+ </resources>
+ <connections/>
+</ui>

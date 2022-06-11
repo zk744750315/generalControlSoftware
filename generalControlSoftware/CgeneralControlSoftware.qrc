@@ -1,0 +1,32 @@
+<RCC>
+  <qresource prefix="新前缀">
+    <file>img/logo.png</file>
+    <file>img/shipin.png</file>
+    <file>img/huojian.png</file>
+    <file>img/流程.png</file>
+    <file>img/考试.png</file>
+    <file>img/wenti.gif</file>
+    <file>img/huojian.png</file>
+    <file>img/jiaoxue.png</file>
+    <file>img/login.jpg</file>
+    <file>img/qr.png</file>
+    <file>img/login22.png</file>
+    <file>img/login.png</file>
+    <file>img/lightred.png</file>
+    <file>img/lightgre.png</file>
+    <file>img/1209020.gif</file>
+    <file>img/1077267.gif</file>
+    <file>img/select.gif</file>
+    <file>img/1236480.gif</file>
+    <file>img/zhu.png</file>
+    <file>img/car.gif</file>
+    <file>img/cang.gif</file>
+    <file>img/store.gif</file>
+    <file>img/shop.gif</file>
+    <file>img/set.gif</file>
+    <file>img/push.gif</file>
+    <file>img/print.gif</file>
+    <file>img/person.gif</file>
+  </qresource>
+  <qresource prefix="activeSignal"/>
+</RCC>

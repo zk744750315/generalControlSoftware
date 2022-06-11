@@ -1,0 +1,49 @@
+﻿  Reading Qt configuration (D:/workSoftware/qt/qt/5.12.9/msvc2017_64/bin/qmake)
+  uic CEditData.ui
+  moc CUartCfg.h
+  moc CEditData.h
+  ActivedSignalCfg.cpp
+  Cconfig.cpp
+  CEditData.cpp
+  CElectricCfg.cpp
+  CgeneralControlSoftware.cpp
+  CNonElectricCfg.cpp
+  CUartCfg.cpp
+  main.cpp
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.h(14): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 Cconfig.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\activedsignalcfg.h(18): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 Cconfig.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.h(13): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 Cconfig.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.h(14): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 Cconfig.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cuartcfg.h(20): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 Cconfig.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.h(13): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 Cconfig.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.h(14): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 main.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\activedsignalcfg.h(18): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 main.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.h(14): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 CgeneralControlSoftware.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\activedsignalcfg.h(18): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 CgeneralControlSoftware.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.h(13): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 main.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.h(14): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 main.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.h(13): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 CgeneralControlSoftware.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.h(14): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 CgeneralControlSoftware.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cuartcfg.h(20): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 main.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.h(13): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 main.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cuartcfg.h(20): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 CgeneralControlSoftware.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.h(13): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 CgeneralControlSoftware.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\activedsignalcfg.cpp(206): warning C4700: 使用了未初始化的局部变量“event”
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.cpp(267): warning C4700: 使用了未初始化的局部变量“event”
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.cpp(379): warning C4700: 使用了未初始化的局部变量“event”
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.cpp(273): warning C4715: “electricCfg::CElectricCfg::SaveCfgAs”: 不是所有的控件路径都返回值
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cuartcfg.cpp(577): warning C4700: 使用了未初始化的局部变量“event”
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cuartcfg.cpp(426): warning C4715: “uartCfg::CUartCfg::SaveCfgAs”: 不是所有的控件路径都返回值
+  moc_CgeneralControlSoftware.cpp
+  moc_ActivedSignalCfg.cpp
+  moc_CNonElectricCfg.cpp
+  moc_CElectricCfg.cpp
+  moc_CUartCfg.cpp
+  moc_CEditData.cpp
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.h(14): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 x64\Release\moc\moc_CgeneralControlSoftware.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\activedsignalcfg.h(18): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 x64\Release\moc\moc_CgeneralControlSoftware.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.h(13): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 x64\Release\moc\moc_CgeneralControlSoftware.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.h(14): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 x64\Release\moc\moc_CgeneralControlSoftware.cpp)
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cuartcfg.h(20): warning C4005: “CfgPathDefault”: 宏重定义 (编译源文件 x64\Release\moc\moc_CgeneralControlSoftware.cpp)
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.h(13): note: 参见“CfgPathDefault”的前一个定义 (编译源文件 x64\Release\moc\moc_CgeneralControlSoftware.cpp)
+  generalControlSoftware.vcxproj -> D:\data\my_work\GeneralPurposeUnitTestUtility\v1.0\generalControlSoftware\x64\Release\generalControlSoftware.exe

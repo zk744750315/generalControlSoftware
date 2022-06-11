@@ -1,0 +1,15 @@
+[ElectricUnit0]
+waveForm=3
+dcAmplitude=26.00
+
+[ElectricUnit1]
+waveForm=3
+dcAmplitude=28.00
+
+[ElectricUnit2]
+waveForm=0
+dcAmplitude=25.00
+
+[ElectricUnit3]
+waveForm=1
+dcAmplitude=15.00
