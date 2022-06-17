@@ -55,28 +55,32 @@ void CConfig::Init()
 void CConfig::CreateActiveSignalCfg()
 {
 	/*先为数据申请存储区，在用其指针区建立配置对象*/
-	m_pStActiveSignalData = new stActDataUnit[u1ACTIVE_SIGNAL_CHANNEL_COUNT];
+	if(NULL == m_pStActiveSignalData)
+		m_pStActiveSignalData = new stActDataUnit[u1ACTIVE_SIGNAL_CHANNEL_COUNT];
 	m_oActiveCfg = new CActivedSignalCfg(m_pStActiveSignalData);
 	m_oActiveCfg->show();
 }
 
 void CConfig::CreateNoElecSignalCfg()
 {
-	m_pStNoElecData = new noElectricCfg::stNoElecFullData;
+	if (NULL == m_pStNoElecData)
+		m_pStNoElecData = new noElectricCfg::stNoElecFullData;
 	m_oNonElecCfg = new noElectricCfg::CNonElectricCfg(m_pStNoElecData);
 	m_oNonElecCfg->show();
 }
 
 void CConfig::CreateElecSignalCfg()
 {
-	m_pStElecData = new stElecFullData;
+	if (NULL == m_pStElecData)
+		m_pStElecData = new stElecFullData;
 	m_oElecCfg = new CElectricCfg(m_pStElecData);
 	m_oElecCfg->show();
 }
 
 void CConfig::CreateUartSignalCfg()
 {
-	m_pStUartData = new stUartFullData;
+	if (NULL == m_pStUartData)
+		m_pStUartData = new stUartFullData;
 	m_oUartCfg = new CUartCfg(m_pStUartData);
 	m_oUartCfg->show();
 }

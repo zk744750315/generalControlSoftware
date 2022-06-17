@@ -10,6 +10,7 @@
 #define UI_CEDITDATA_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
@@ -47,6 +48,9 @@ public:
         if (CEditData->objectName().isEmpty())
             CEditData->setObjectName(QString::fromUtf8("CEditData"));
         CEditData->resize(883, 513);
+        QIcon icon;
+        icon.addFile(QString::fromUtf8(":/\346\226\260\345\211\215\347\274\200/img/logo.png"), QSize(), QIcon::Normal, QIcon::Off);
+        CEditData->setWindowIcon(icon);
         CEditData->setStyleSheet(QString::fromUtf8("QWidget{\n"
 "font: 12pt \"SimSun\";\n"
 "}\n"

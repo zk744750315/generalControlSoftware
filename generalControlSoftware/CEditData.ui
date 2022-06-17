@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>数据</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="CgeneralControlSoftware.qrc">
+    <normaloff>:/新前缀/img/logo.png</normaloff>:/新前缀/img/logo.png</iconset>
+  </property>
   <property name="styleSheet">
    <string notr="true">QWidget{
 font: 12pt &quot;SimSun&quot;;
@@ -249,6 +253,8 @@ QPushButton:hover {
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="CgeneralControlSoftware.qrc"/>
+ </resources>
  <connections/>
 </ui>

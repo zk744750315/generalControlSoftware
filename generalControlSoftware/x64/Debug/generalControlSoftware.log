@@ -1,3 +1,9 @@
 ﻿  Reading Qt configuration (D:/workSoftware/qt/qt/5.12.9/msvc2017_64/bin/qmake)
-  SftpClient.cpp
+  Cconfig.cpp
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.h(14): warning C4005: “CfgPathDefault”: 宏重定义
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\activedsignalcfg.h(18): note: 参见“CfgPathDefault”的前一个定义
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.h(13): warning C4005: “CfgPathDefault”: 宏重定义
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cnonelectriccfg.h(14): note: 参见“CfgPathDefault”的前一个定义
+d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\cuartcfg.h(20): warning C4005: “CfgPathDefault”: 宏重定义
+  d:\data\my_work\generalpurposeunittestutility\v1.0\generalcontrolsoftware\generalcontrolsoftware\celectriccfg.h(13): note: 参见“CfgPathDefault”的前一个定义
   generalControlSoftware.vcxproj -> D:\data\my_work\GeneralPurposeUnitTestUtility\v1.0\generalControlSoftware\x64\Debug\generalControlSoftware.exe
