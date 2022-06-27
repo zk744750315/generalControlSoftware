@@ -169,7 +169,6 @@ namespace electricCfg
 			return arrTem[index];
 		}
 
-
 		Ui::CElectricCfg ui;
 		/*ini文件中读取到的数据信息，此数据有有效数据*/
 		stElecFullData * m_pStElecData;

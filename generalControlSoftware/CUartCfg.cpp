@@ -87,6 +87,7 @@ void CUartCfg::SetCallbackFunc()
 	connect(ui.pushDigitalEditor, &QPushButton::clicked, this, &CUartCfg::InPutChangedCallbackof_pushDigitalEditor);
 	connect(ui.pushCmdEditor1, &QPushButton::clicked, this, &CUartCfg::InPutChangedCallbackof_pushCmdEditor1);
 	connect(ui.pushCmdEditor2, &QPushButton::clicked, this, &CUartCfg::InPutChangedCallbackof_pushCmdEditor2);
+
 }
 
 void CUartCfg::InPutChangedCallbackof_combInterfaceType()

@@ -27,6 +27,7 @@ void CEditData::Init()
 	connect(ui.radioBConstant, SIGNAL(clicked()), this, SLOT(InPutChangedCallbackof_radioBConstant()));
 	connect(ui.radioReadFile, SIGNAL(clicked()), this, SLOT(InPutChangedCallbackof_radioReadFile()));
 	connect(ui.spinConstant, SIGNAL(valueChanged(QString)), this, SLOT(InPutChangedCallbackof_spinConstant()));
+	connect(ui.tableWidget, SIGNAL(cellChanged(int, int)), this, SLOT(InPutChangedCallbackof_tableWidget(int, int)));
 }
 
 /*将m_pData中的数据 打印在界面中*/
@@ -35,6 +36,7 @@ void CEditData::SetTableData()
 	uchar *pData = m_pData;
 	uint i = 0;
 	QString strItem = "";
+	disconnect(ui.tableWidget, SIGNAL(cellChanged(int, int)), this, SLOT(InPutChangedCallbackof_tableWidget(int, int)));
 	while (m_u4FrameNumPos != i && i < m_u4DataLen)
 	{
 	show:
@@ -48,10 +50,7 @@ void CEditData::SetTableData()
 		pData++;
 		goto show;
 	}
-	if (!m_bConnection)
-	{
-		connect(ui.tableWidget, SIGNAL(cellChanged(int, int)), this, SLOT(InPutChangedCallbackof_tableWidget(int, int)));
-	}
+	connect(ui.tableWidget, SIGNAL(cellChanged(int, int)), this, SLOT(InPutChangedCallbackof_tableWidget(int, int)));
 }
 
 void CEditData::InPutChangedCallbackof_radioAddOne()
@@ -134,7 +133,7 @@ void CEditData::InPutChangedCallbackof_tableWidget(int row, int col)
 	unsigned int u4ChangedPos = row * TABLECOLNUM + col;
 	if (m_u4FrameNumPos <= u4ChangedPos)
 	{
-		u4ChangedPos++;
+		u4ChangedPos++; 
 	}
 	/*指针[n]  这种形式就已经解引用了*/
 	pData[u4ChangedPos] = ui.tableWidget->item(row, col)->text().toUInt(NULL, 16);

@@ -47,6 +47,9 @@
     <QtUic Include="CEditData.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+    <QtUic Include="CDataShow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -76,6 +79,9 @@
     <ClCompile Include="XSleep.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CDataShow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="ActivedSignalCfg.h">
@@ -91,6 +97,9 @@
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="CEditData.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CDataShow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

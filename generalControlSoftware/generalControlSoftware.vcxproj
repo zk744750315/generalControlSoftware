@@ -54,7 +54,7 @@
   </ImportGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
     <QtInstall>5.12.9_msvc2017_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;network;gui;widgets;printsupport</QtModules>
     <QtBuildConfig>debug</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="QtSettings">
@@ -64,7 +64,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
     <QtInstall>5.12.9_msvc2017_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+    <QtModules>core;network;gui;widgets;printsupport</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="QtSettings">
@@ -172,10 +172,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CDataShow.cpp" />
     <ClCompile Include="SftpClient.cpp" />
     <ClCompile Include="XSleep.cpp" />
     <QtRcc Include="CgeneralControlSoftware.qrc" />
     <QtUic Include="ActivedSignalCfg.ui" />
+    <QtUic Include="CDataShow.ui" />
     <QtUic Include="CEditData.ui" />
     <QtUic Include="CElectricCfg.ui" />
     <QtUic Include="CgeneralControlSoftware.ui" />
@@ -196,6 +198,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cconfig.h" />
+    <QtMoc Include="CDataShow.h" />
     <ClInclude Include="SftpClient.h" />
     <ClInclude Include="XSleep.h" />
     <QtMoc Include="CNonElectricCfg.h" />
